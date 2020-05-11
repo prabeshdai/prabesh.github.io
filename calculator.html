@@ -1,0 +1,95 @@
+<html>
+ <head>
+  <title>| Calculator | </title>
+ <style>
+ 	h1{
+ 		text-align: center;
+ 	}
+ </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav>
+		<div class="logo">
+		</div>
+		<ul>
+			<li><a href="PRS.html"><i class="fa fa-home">Home</a></li></i>
+			<li><a href="about.html"><i class="fa fa-info-circle">About</a></li></i>
+			<li><a href="calculator.html" class="active"><i class="fa fa-calculator">Calculator</a></li></i>
+			<li><a href="gallery.html"><i class="fa fa-envira">Gallery</a></li></i>
+			<li><a href="videos.html"><i class="fa fa-youtube">Videos</a></li></i>
+			<li><a href="login1.html"><i class="fa fa-sign-in"></i>Login</a></li></i>
+			</a></li>
+			</ul>
+		</nav><br><br><br><br>
+<marquee behivour="alternate" ><h2 style="color:blue; font-size:34pt">| OUR CALCULATOR |</h2></marquee>
+   <script type="text/javascript">
+   function ram()
+   {
+    myform.txt1.value=Math.sin(myform.txt1.value);
+   }
+   function hari()
+   {
+    myform.txt1.value=Math.cos(myform.txt1.value);
+   }
+   function sham()
+   {
+    myform.txt1.value=Math.tan(myform.txt1.value);
+   }
+   function display(n1)
+   {
+   myform.txt1.value=myform.txt1.value+n1;
+   }
+   function rootit()
+   { 
+    myform.txt1.value=Math.sqrt(myform.txt1.value);
+ }
+   function calc()
+   {
+    myform.txt1.value=eval(myform.txt1.value);
+   }
+  </script>
+  </head>
+<link rel="stylesheet" type="text/css" href="style329.css">
+ <body bgcolor="white" >
+  <form name="myform">
+  <table border="6" cellpadding="6" cellspacing="6" align="center" bgcolor="gray">
+   <tr><td>
+   <input type="text" name="txt1" value="" textalign="right" size="35"  style="font-size:24pt ; background:white; color:blue; height:80"></br>
+   </td></tr>
+   <tr><td>
+   <input type="button" name="btn9" value="9" onclick="display(btn9.value)"  style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btn8" value="8" onclick="display(btn8.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btn7" value="7" onclick="display(btn7.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btnc" value="c" onclick="txt1.value=''"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btnCE" value="CE" onclick="txt1.value=''"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btntan" value="tan" onclick="sham()"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80"></br>
+   </td></tr>
+   <tr><td>
+   <input type="button" name="btn6" value="6" onclick="display(btn6.value)"  style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btn5" value="5" onclick="display(btn5.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btn4" value="4" onclick="display(btn4.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btnmul" value="*" onclick="display(btnmul.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btnmin" value="-" onclick="display(btnmin.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btnsin" value="sin" onclick="ram()"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80"></br>
+   </td></tr>
+   <tr><td>
+   <input type="button" name="btn3" value="3" onclick="display(btn3.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btn2" value="2" onclick="display(btn2.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btn1" value="1" onclick="display(btn1.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btndi" value="/" onclick="display(btndi.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btnpul" value="+" onclick="display(btnpul.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btncos" value="cos" onclick="hari()"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80"></br>
+   </td></tr>
+   <tr><td>
+   <input type="button" name="btn0" value="0" onclick="display(btn0.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+  <input type="button" name="btn00" value="00" onclick="display(btn00.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btnpo" value="." onclick="display(btnpo.value)"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btnroot" value="root" onclick="rootit()"   style="font-size:24pt ; background:white; color:blue; width:90 ; height:80">
+   <input type="button" name="btneval" value="=" onclick="calc()"  style="font-size:24pt ; background:white; color:blue; width:180; height:80">
+   </td></tr>
+
+
+</table>  
+</form>
+<br><br><h1>&copy COPYRIGHT RESERVED 2019</h1>
+ </body>
+</html>
